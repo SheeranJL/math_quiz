@@ -25,12 +25,12 @@ const GameScreen = () => {
       setQuestion(actions.generateEasyQuestion())
       setFirstRender(false);
     }
-
     //generate a new question on each correct guess//
     if (parseInt(solution) === parseInt(answer)) {
       setQuestion(actions.generateEasyQuestion())
+      setCorrectGuess(correctGuess + 1)
+      setAnswer('')
     }
-
   }, [correctGuess, answer])
 
 
@@ -47,7 +47,6 @@ const GameScreen = () => {
   }
 
   const handleChange = (e) => {
-
     //regex to limit non-numerical input//
     const re = /^[0-9\b]+$/;
     if (e.target.value === '' || re.test(e.target.value)) {
@@ -69,7 +68,12 @@ const GameScreen = () => {
         </div>
 
         <div className='input-section'>
-            <input type='text' pattern="[0-9]*" onChange={handleChange} value={answer}/>
+          <input type='text' pattern="[0-9]*" onChange={handleChange} value={answer}/>
+        </div>
+
+        <div className='score-and-time'>
+          <span className='score'>Score: {correctGuess}</span>
+          <span className='time'>Time: 60</span>
         </div>
 
       </div>
