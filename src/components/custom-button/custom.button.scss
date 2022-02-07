@@ -1,0 +1,23 @@
+.lobby-button {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 8vw;
+  height: 4vh;
+  cursor: pointer;
+  font-weight: bold;
+
+
+  &:hover {
+    background-color: grey;
+    color: white;
+  }
+}
+
+.selected {
+  transition: 0.7s;
+  background-color: lime;
+  box-shadow: 0.1px 0.1px 7px 1px;
+}

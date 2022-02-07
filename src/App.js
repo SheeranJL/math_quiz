@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext} from 'react';
+import {appContext} from './context/context.js';
+import './App.scss';
 
-function App() {
+//Import components//
+import Lobby from './components/lobby/lobby.js';
+import GameScreen from './components/game-screen/game-screen.js';
+
+const App = () => {
+
+  const {data, actions} = useContext(appContext);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {
+        data.startGame
+        ? <GameScreen />
+        : <Lobby />
+      }
+
+
     </div>
   );
 }
