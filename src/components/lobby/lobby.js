@@ -22,6 +22,7 @@ const Lobby = () => {
   const handleSubmit = async() => {
     // await actions.startTimer(selection)
     actions.setStartGame(true)
+    actions.setGameMode(selection);
   }
 
   return (
