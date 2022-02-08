@@ -6,11 +6,16 @@
   justify-content: center;
 
   .game-screen {
-    background-color: grey;
-    width: 50vw;
-    min-width: 500px;
-    height: 50vh;
-    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(106, 86, 175, 0.8);
+    border-radius: 10px;
+    width: 40vw;
+    max-width: 40%;
+    height: 70vh;
+    max-height: 500px;
+
 
     .game-mode-title {
       display: flex;
@@ -45,16 +50,18 @@
         font-size: 2vw;
         text-align: center;
       }
-
     }
 
     .score-and-time {
       display: flex;
       justify-content: space-around;
-      .score {
+
+      .score, .time {
+        display: flex;
+        flex-direction: column;
+        font-size: 2vw;
       }
-      .time {
-      }
+
     }
 
 

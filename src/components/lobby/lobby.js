@@ -19,11 +19,10 @@ const Lobby = () => {
   }
 
   //Handle submission of the app modal form//
-  const handleSubmit = () => {
-    console.log(selection)
+  const handleSubmit = async() => {
+    // await actions.startTimer(selection)
     actions.setStartGame(true)
   }
-
 
   return (
     <div className='lobby-page-container'>
@@ -32,9 +31,9 @@ const Lobby = () => {
           <span> Select difficulty </span>
         </div>
         <div className='lobby-buttons'>
-          <CustomButton onClick={handleSelectionClick} selection={selection}> Easy </CustomButton>
-          <CustomButton onClick={handleSelectionClick} selection={selection}> Medium </CustomButton>
-          <CustomButton onClick={handleSelectionClick} selection={selection}> Hard </CustomButton>
+          <CustomButton onClick={handleSelectionClick} selection={selection}>Easy</CustomButton>
+          <CustomButton onClick={handleSelectionClick} selection={selection}>Medium</CustomButton>
+          <CustomButton onClick={handleSelectionClick} selection={selection}>Hard</CustomButton>
         </div>
         {
           selection
