@@ -38,7 +38,7 @@ const Lobby = () => {
         </div>
         {
           selection
-          ? <span className='continue-button-lobby' onClick={handleSubmit}> Continue </span>
+          ? <span className='continue-button-lobby' onClick={handleSubmit}>Continue</span>
           : null
         }
       </div>

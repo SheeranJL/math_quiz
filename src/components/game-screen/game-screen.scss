@@ -31,6 +31,7 @@
       justify-content: center;
       height: 30%;
       font-size: 4vw;
+      color: white;
     }
 
     .input-section {
@@ -43,12 +44,14 @@
 
       input {
         background-color: transparent;
+        color: yellow;
         border: none;
         border-bottom: 1.5px solid black;
         outline: none;
         width: 15%;
-        font-size: 2vw;
+        font-size: 2.4vw;
         text-align: center;
+
       }
     }
 
@@ -63,8 +66,18 @@
       }
     }
 
-    .game-over-modal-container {
-
+    .back-button {
+      color: red;
+      font-size: 2vw;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
     }
 
   }

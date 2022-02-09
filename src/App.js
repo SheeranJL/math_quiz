@@ -12,14 +12,11 @@ const App = () => {
 
   return (
     <div className="App">
-
       {
         data.startGame
         ? <GameScreen />
         : <Lobby />
       }
-
-
     </div>
   );
 }
