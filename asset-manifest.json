@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/math_quiz/static/css/main.141773c3.css",
+    "main.js": "/math_quiz/static/js/main.af2b9dce.js",
+    "static/js/787.c0a2cbd0.chunk.js": "/math_quiz/static/js/787.c0a2cbd0.chunk.js",
+    "index.html": "/math_quiz/index.html",
+    "main.141773c3.css.map": "/math_quiz/static/css/main.141773c3.css.map",
+    "main.af2b9dce.js.map": "/math_quiz/static/js/main.af2b9dce.js.map",
+    "787.c0a2cbd0.chunk.js.map": "/math_quiz/static/js/787.c0a2cbd0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.141773c3.css",
+    "static/js/main.af2b9dce.js"
+  ]
+}
